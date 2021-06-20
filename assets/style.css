@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #d9dcd6;
+}
+
+.header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(31, 114, 190);
+  color: #ffffff;
+  /* background-image: url("images/BuiltToLast.jpg"); */
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+/* about me sedtion styling */
+
+.about-me {
+  padding-top: 15px;
+}
+
+/* my work section styling */
+
+.my_work {
+}
+
+/* contact me section styling */
+
+.contact-me {
+}
+
+/* the section below controls the navigation bar at the top of the webpage */
+
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
