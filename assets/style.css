@@ -12,13 +12,15 @@
 }
 
 body {
-  background-color: #d9dcd6;
+  background-color: skyblue;
 }
 
 .header {
-  padding: 20px;
+  padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  float: left;
+  /* this float was bringing the entire header box to the left */
+  /* float: left; */
+  display: inline-flexbox;
   background-color: rgb(31, 114, 190);
   color: #ffffff;
   /* background-image: url("images/BuiltToLast.jpg"); */
@@ -31,12 +33,63 @@ body {
 
 /* the section below controls the navigation bar at the top of the webpage */
 
-.background-image {
-  background-image: url(images/climbmountains.jpg);
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-flex;
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover {
+  background-color: tan;
+  color: slategray;
+
+}
+
+/* start of navigation bar with background photo */
+
+/* .background-image {
+  background-image: url(climbmountains.jpg);
   min-height: 380px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  margin: 10px;
+  width: auto;
+  float: right;
+}
+
+.top_nav {
+  overflow: hidden;
+  background-color: skyblue;
+}
+
+.top_nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.top_nav a:hover {
+  background-color: tan;
+  color: slategray;
 }
 
 .header nav {
@@ -51,9 +104,11 @@ body {
 }
 
 .header nav div {
-  display: inline-block;
-  margin-left: 25px;
-}
+  /* display: inline-block; */
+  /* margin-left: 25px;
+} */ 
+
+/* end of navigation section with backgroun photo */
 
 a {
   color: #ffffff;
@@ -66,6 +121,15 @@ p {
 
 /* about me sedtion styling */
 
+#about-me {
+    display: block;
+    width: 220px;
+    padding: 10px;
+    border: 5p;
+    margin: auto;
+    background-color: tan;
+}
+
 .about-me {
   padding-top: 15px;
   display: inline-block;
@@ -76,12 +140,21 @@ p {
 
 /* my work section styling */
 
-.my_work {
+.my-work {
+ 
 }
 
-/* contact me section styling */
+.mockwebsites {
 
-.contact-me {
+}
+
+.maincard {
+    width: 150px;
+    padding: 15px;
+    border: 10px;
+    margin: 0;
+    background-color: tan;
+    display: inline-block;
 }
 
 .card {
@@ -90,6 +163,19 @@ p {
   margin-block-end: auto;
   background-color: tan;
 }
+
+/* contact me section styling */
+
+.contact-me {
+   /* {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+} */
+
+
 
 @media screen and (max-width: 750px) {
   main,
