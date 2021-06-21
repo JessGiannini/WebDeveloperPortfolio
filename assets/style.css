@@ -2,6 +2,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-align: center;
+
+  -webkit-box-ordinal-group: 1; /* iOS 6-, Safari, Opera*/
+  -moz-box-ordinal-group: 1; /* Firefox*/
+  -ms-flex-order: 1; /* IE 10 */
+  -webkit-order: 1; /* Chrome */
+  flex-order: 1;
 }
 
 body {
@@ -10,8 +17,8 @@ body {
 
 .header {
   padding: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
   background-color: rgb(31, 114, 190);
   color: #ffffff;
   /* background-image: url("images/BuiltToLast.jpg"); */
@@ -22,10 +29,49 @@ body {
   font-size: 48px;
 }
 
+/* the section below controls the navigation bar at the top of the webpage */
+
+.background-image {
+  background-image: url(images/climbmountains.jpg);
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.header nav div {
+  list-style-type: none;
+}
+
+.header nav div {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
 /* about me sedtion styling */
 
 .about-me {
   padding-top: 15px;
+  display: inline-block;
+  margin: 0;
+  margin-block-end: auto;
+  background-color: tan;
 }
 
 /* my work section styling */
@@ -38,30 +84,16 @@ body {
 .contact-me {
 }
 
-/* the section below controls the navigation bar at the top of the webpage */
-
-.header nav {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
-}
-
-.header nav ul {
-  list-style-type: none;
-}
-
-.header nav ul li {
+.card {
   display: inline-block;
-  margin-left: 25px;
+  margin: 0;
+  margin-block-end: auto;
+  background-color: tan;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-p {
-  font-size: 16px;
+@media screen and (max-width: 750px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
 }
