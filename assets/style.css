@@ -33,26 +33,31 @@ body {
 
 /* the section below controls the navigation bar at the top of the webpage */
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+nav {
+  display: inline-block;
+
+  margin: 0 auto;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 li {
-    display: inline-flex;
-    float: left;
-    color: whitesmoke;
-    text-align: center;
-    padding: 20px 18px;
-    text-decoration: none;
-    font-size: 20px;
+  display: inline-flex;
+  float: left;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px 18px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 li a:hover {
   background-color: tan;
   color: slategray;
-
 }
 
 /* start of navigation bar with background photo */
@@ -105,8 +110,8 @@ li a:hover {
 
 .header nav div {
   /* display: inline-block; */
-  /* margin-left: 25px;
-} */ 
+/* margin-left: 25px;
+} */
 
 /* end of navigation section with backgroun photo */
 
@@ -122,17 +127,16 @@ p {
 /* about me sedtion styling */
 
 #about-me {
-    display: block;
-    width: 220px;
-    padding: 10px;
-    border: 5p;
-    margin: auto;
-    background-color: tan;
+  width: 220px;
+  padding: 10px;
+  border: 5p;
+  margin: auto;
+  background-color: tan;
 }
 
 .about-me {
   padding-top: 15px;
-  display: inline-block;
+
   margin: 0;
   margin-block-end: auto;
   background-color: tan;
@@ -141,32 +145,38 @@ p {
 /* my work section styling */
 
 .my-work {
- 
+  display: center;
 }
 
-.mockwebsites {
-
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .maincard {
-    width: 150px;
-    padding: 15px;
-    border: 10px;
-    margin: 0;
-    background-color: tan;
-    display: inline-block;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 15px;
+  border: 10px;
+  border-style: solid;
+  margin: 0;
+  background-color: tan;
+
+  float: center;
 }
 
 .card {
-  display: inline-block;
   margin: 0;
-  margin-block-end: auto;
+  border: 10px;
+  border-style: solid;
   background-color: tan;
 }
 
 /* contact me section styling */
 
-.contact-me {
+/* .contact-me {}
    /* {
     width: 300px;
     border: 15px solid green;
@@ -174,12 +184,34 @@ p {
     margin: 20px;
   }
 } */
+*/
 
 
+/* makes for ipad */
 
-@media screen and (max-width: 750px) {
-  main,
-  nav {
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+}
+/* for desktop */
+
+@media screen and (max-width: 768px) {
+  .maincard {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .card {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+/* makes for iphone x */
+@media screen and (max-width: 812px) {
+  main {
     flex-direction: column;
   }
 }
