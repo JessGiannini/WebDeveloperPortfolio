@@ -154,6 +154,13 @@ div header {
   }
 }
 /* for desktop */
+@media screen and (max-width: 812px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+/* makes for iphone x */
 
 @media screen and (max-width: 768px) {
   .maincard {
@@ -165,12 +172,5 @@ div header {
   .card {
     grid-column-start: 1;
     grid-column-end: 3;
-  }
-}
-
-/* makes for iphone x */
-@media screen and (max-width: 812px) {
-  main {
-    flex-direction: column;
   }
 }

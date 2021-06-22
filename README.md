@@ -15,7 +15,9 @@ https://jessgiannini.github.io/WebDeveloperPortfolio/
 
 ## Author
 
+<h3>
 Jessica Giannini
+</h3>
 
 - Portfolio Site ( https://jessgiannini.github.io/WebDeveloperPortfolio/)
 - Github(https://github.com/)
