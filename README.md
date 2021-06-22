@@ -1,86 +1,38 @@
-# WebDeveloperPortfolio
+<h1>
+Web Developer Portfolio
+</h1>
 
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo, and links to sections about them, their work, and how to contact them
-
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
-
-Sections for navigation bar
-
-- developer's name, a recent photo, and links to sections about them, their work, and how to contact them
-
-- links in the navigation
-  THEN the UI scrolls to the corresponding section
-
-The work section
-
-- click on the link to the section about their work the UI scrolls to a section with titled images of the developer's applications
-
-- I am presented with the developer's first application that application's image should be larger in size than the others
-
-The application or websites built
-
-- click on the images of the applications I am taken to that deployed application
-
-Applied UI to all size screens or devices
-
-- resize the page or view the site on various screens and devices I am presented with a responsive layout that adapts to my viewport
-
-Project Title
-One paragraph of project description goes here.
-
+<h2>
 Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+</h2>
 
-Prerequisites
-What things you need to install the software and how to install them.
-Give examples
+This project was prepared using html and css using Visual Studio Code editor.
 
-Installing
-A step by step series of examples that tell you how to get a development environment running.
-Say what the step will be:
-Give the example
-And repeat
-until finished
-End with an example of getting some data out of the system or using it for a little demo.
-
+<h2>
 Built With
+</h2>
 
-HTML
-CSS
-Javascript
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
+<h2>
 Deployed Link
+</h2>
 
-See Live Site
+https://jessgiannini.github.io/WebDeveloperPortfolio/
 
+<h3>
 Authors
+</h3>
 
-YOUR NAME
+Jessica Giannini
 
-Link to Portfolio Site
-Link to Github
-Link to LinkedIn
+- Portfolio Site ( https://jessgiannini.github.io/WebDeveloperPortfolio/)
+- Github(https://github.com/)
+- LinkedIn (https://www.linkedin.com/in/jessica-aletta-giannini-155b1310/)
 
-See also the list of contributors who participated in this project.
-
-License
-This project is licensed under the MIT License
-
+<h4>
 Acknowledgments
+</h4>
 
-Hat tip to anyone whose code, libraries, packages, or UI was used / inspired from
-Inspiration
-etc
+I'd like to thank my tutor Suzanna Akins for helping me style this portfolio. I learned so much from sites such as https://css-tricks.com/snippets/css/complete-guide-grid/ and https://www.w3schools.com/css/css3_mediaqueries_ex.asp. I'd also like to thank Kelsey Iverson for inspiring me to become a web developer.
