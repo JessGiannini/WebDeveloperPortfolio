@@ -1,9 +1,13 @@
+:root {
+  --light: #d2b48c;
+  --white: #ffffff;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   text-align: center;
-
   -webkit-box-ordinal-group: 1; /* iOS 6-, Safari, Opera*/
   -moz-box-ordinal-group: 1; /* Firefox*/
   -ms-flex-order: 1; /* IE 10 */
@@ -18,24 +22,19 @@ body {
 .header {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  /* this float was bringing the entire header box to the left */
-  /* float: left; */
   display: inline-flexbox;
   background-color: rgb(31, 114, 190);
-  color: #ffffff;
-  /* background-image: url("images/BuiltToLast.jpg"); */
+  color: var(--white);
 }
 
 .header h1 {
-  display: inline-block;
-  font-size: 48px;
+  font-size: xx-large;
 }
 
 /* the section below controls the navigation bar at the top of the webpage */
 
 nav {
   display: inline-block;
-
   margin: 0 auto;
 }
 
@@ -56,67 +55,14 @@ li {
 }
 
 li a:hover {
-  background-color: tan;
+  background-color: var(--light);
+  padding: 5px;
   color: slategray;
+  position: static;
 }
-
-/* start of navigation bar with background photo */
-
-/* .background-image {
-  background-image: url(climbmountains.jpg);
-  min-height: 380px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.container {
-  position: absolute;
-  margin: 10px;
-  width: auto;
-  float: right;
-}
-
-.top_nav {
-  overflow: hidden;
-  background-color: skyblue;
-}
-
-.top_nav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.top_nav a:hover {
-  background-color: tan;
-  color: slategray;
-}
-
-.header nav {
-  padding-top: 15px;
-  margin-right: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-.header nav div {
-  list-style-type: none;
-}
-
-.header nav div {
-  /* display: inline-block; */
-/* margin-left: 25px;
-} */
-
-/* end of navigation section with backgroun photo */
 
 a {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -127,25 +73,33 @@ p {
 /* about me sedtion styling */
 
 #about-me {
-  width: 220px;
+  width: 0 auto;
   padding: 10px;
-  border: 5p;
+  border: 10px;
+  border-style: solid;
+  border-color: black;
   margin: auto;
-  background-color: tan;
+  background-color: var(--light);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
 }
 
 .about-me {
   padding-top: 15px;
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   margin-block-end: auto;
-  background-color: tan;
+  background-color: var(--light);
 }
 
 /* my work section styling */
 
 .my-work {
   display: center;
+  background-color: var(--light);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  padding: auto;
 }
 
 .container {
@@ -162,7 +116,7 @@ p {
   border: 10px;
   border-style: solid;
   margin: 0;
-  background-color: tan;
+  background-color: var(--light);
 
   float: center;
 }
@@ -171,21 +125,23 @@ p {
   margin: 0;
   border: 10px;
   border-style: solid;
-  background-color: tan;
+  background-color: var(--light);
 }
 
 /* contact me section styling */
 
-/* .contact-me {}
-   /* {
-    width: 300px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-  }
-} */
-*/
+.contact-me {
+  display: inline-block;
+  width: auto;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
 
+#email {
+  text-align: center;
+  margin: 0 auto;
+}
 
 /* makes for ipad */
 
