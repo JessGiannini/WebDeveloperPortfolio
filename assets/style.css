@@ -117,7 +117,6 @@ p {
   border-style: solid;
   margin: 0;
   background-color: var(--light);
-
   float: center;
 }
 
@@ -126,6 +125,10 @@ p {
   border: 10px;
   border-style: solid;
   background-color: var(--light);
+}
+
+div header {
+  font-weight: bolder;
 }
 
 /* contact me section styling */
