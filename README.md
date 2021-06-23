@@ -20,7 +20,7 @@ Jessica Giannini
 </h3>
 
 - Portfolio Site ( https://jessgiannini.github.io/WebDeveloperPortfolio/)
-- Github(https://github.com/)
+- Github(https://github.com/jessgiannini)
 - LinkedIn (https://www.linkedin.com/in/jessica-aletta-giannini-155b1310/)
 
 ## Acknowledgments
