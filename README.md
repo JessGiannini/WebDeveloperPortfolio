@@ -2,7 +2,9 @@
 
 ## Getting Started
 
-This project was prepared using html and css using Visual Studio Code editor.
+This project was prepared using html and css using Visual Studio Code editor. The website should appear as seen below.
+
+![Getting Started](./images/ScreenShotPortfolio.png)
 
 ## Built With
 
