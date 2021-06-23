@@ -12,7 +12,7 @@
   -moz-box-ordinal-group: 1; /* Firefox*/
   -ms-flex-order: 1; /* IE 10 */
   -webkit-order: 1; /* Chrome */
-  flex-order: 1;
+  -flex-order: 1;
 }
 
 body {
@@ -69,6 +69,16 @@ a {
 p {
   font-size: 16px;
 }
+/* general styling for body */
+
+#about-me,
+.about-me,
+.my-work,
+.maincard,
+.card {
+  background-color: var(--light);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* about me sedtion styling */
 
@@ -79,17 +89,13 @@ p {
   border-style: solid;
   border-color: black;
   margin: auto;
-  background-color: var(--light);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
 }
 
 .about-me {
   padding-top: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   margin-block-end: auto;
-  background-color: var(--light);
 }
 
 .about-me img {
@@ -103,8 +109,6 @@ p {
 
 .my-work {
   display: center;
-  background-color: var(--light);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
   padding: auto;
 }
@@ -123,7 +127,6 @@ p {
   border: 10px;
   border-style: solid;
   margin: 0;
-  background-color: var(--light);
   float: center;
 }
 
@@ -131,7 +134,6 @@ p {
   margin: 0;
   border: 10px;
   border-style: solid;
-  background-color: var(--light);
 }
 
 div header {
